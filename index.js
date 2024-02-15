@@ -1,3 +1,11 @@
-let num1 = 8;
-console.log(8 + false);
-console.log(8 + true);
+// console.log("Hello World");
+// let age = null;
+// console.log(age);
+
+// if (false) {
+//   console.log("pizza");
+// } else {
+//   console.log("burger");
+// }
+
+false ? console.log("pizza") : console.log("burger");
