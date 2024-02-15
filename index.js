@@ -1,11 +1,11 @@
-// console.log("Hello World");
-// let age = null;
-// console.log(age);
+const express = require("express");
+const app = express();
+const port = 3009;
 
-// if (false) {
-//   console.log("pizza");
-// } else {
-//   console.log("burger");
-// }
+app.get("/", (req, res) => {
+  res.send("Hello World from Miguel!");
+});
 
-false ? console.log("pizza") : console.log("burger");
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}!`);
+});

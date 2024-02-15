@@ -1,22 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guess The Number - Miguel Manalo</title>
-  <link rel="stylesheet" src="./styles/styles.css">
+  <!-- <link rel="stylesheet" src="./styles/styles.css"> -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgba(98,45,11,0.2);;
+      color: black;
+      font-family: 'Arial', Courier, monospace;
+
+    }
+
+    h1, h2, p {
+      margin: 1em auto;
+      text-align: center;
+    }
+
+    h2 {
+      text-decoration: underline;
+    }
+
+    form {
+      margin: 0 auto;
+      max-width: 500px;
+      min-width: 300px;
+      width: 60vw;
+    }
+
+    label, legend {
+      text-align: center;
+    }
+
+    fieldset {
+      border: dotted;
+      padding: 1rem 0px;
+    }
+
+
+  </style>
 </head>
+
 <body>
   <h1>Guess The Number</h1>
-  <h2>Choose a number from 1 to 10:</h2>
-  <form action="/submit-url.html" method="post">
+  <h2>Choose a number from 1 to 10</h2>
+  <form action="/submit-url.html" method="GET">
     <fieldset>
-      <legend>What do you think the mystery number is?</legend>
-    <input id="number-guess" type="number" placeholder="??" name="number-guess" required value="" maxlength="2" min="1" max="10">
-    <button type="submit" >Submit</button>
-  </fieldset>
+      <legend>What's the mystery number?</legend>
+      <label for="number-guess"> Your Guess:
+        <input id="number-guess" type="number" placeholder="??"
+          name="number-guess" required maxlength="2" min="1" max="10">
+        <button type="submit">Submit</button>
+      </label>
+    </fieldset>
   </form>
 
 </body>
 <script type="text/javascript" src="index.js" defer></script>
+
 </html>
