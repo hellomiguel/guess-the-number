@@ -8,12 +8,11 @@
 </head>
 <body>
   <h1>Guess The Number</h1>
-  <h2>???</h2>
   <h2>Choose a number from 1 to 10:</h2>
   <form action="/submit-url.html" method="post">
     <fieldset>
       <legend>What do you think the mystery number is?</legend>
-    <input id="number-guess" type="text" placeholder="Guess a number..." name="number-guess" required value="" maxlength="2">
+    <input id="number-guess" type="number" placeholder="??" name="number-guess" required value="" maxlength="2" min="1" max="10">
     <button type="submit" >Submit</button>
   </fieldset>
   </form>
